@@ -27,7 +27,7 @@ module.exports = (env, argv) => {
       bundles: [
         {
           src: jsArr,
-          dest: "./public/js/script.js",
+          dest: "./docs/js/script.js",
         },
       ],
     }),
@@ -75,7 +75,7 @@ module.exports = (env, argv) => {
       app: ["./src/js/app.js", "./src/scss/style.scss"],
     },
     output: {
-      path: __dirname + "/public",
+      path: __dirname + "/docs",
       filename: "js/[name].js",
     },
     devtool: isProduction ? "source-map" : "source-map",
