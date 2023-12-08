@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>title</title>
+        <title>Slick slider</title>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="icomoon/style.css" />
+        <link rel="stylesheet" href="css/slick.css" />
+    </head>
+    <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+            <img src="i/check.svg" />
+        </button>
+        <header class="header">
+            <img class="logo" src="i/logo.avif" />
+            <!--desktop menu start-->
+            <nav class="menu">
+                <ul class="menu-desktop">
+                    <li class="has-submenu">
+                        <a href="#">HOME</a>
+                        <ul>
+                            <li><a href="#">Home Clean</a></li>
+                            <li><a href="#">Home Collection</a></li>
+                            <li><a href="#">Home Minimal</a></li>
+                            <li><a href="#">Home Modern</a></li>
+                            <li><a href="#">Home Style</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has-submenu">
+                        <a href="#">SHOP</a>
+                        <ul>
+                            <li><a href="#">Shop Standart</a></li>
+                            <li><a href="#">Shop Full</a></li>
+                            <li><a href="#">Shop List</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has-submenu">
+                        <a href="#">PRODUCT</a>
+                        <ul>
+                            <li><a href="#">Sticky ATC</a></li>
+                            <li><a href="#">Video Inner</a></li>
+                            <li><a href="#">Countdown </a></li>
+                            <li><a href="#">Description Accordion</a></li>
+                            <li><a href="#">Description Tab</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">BLOG</a>
+                        <ul>
+                            <li><a href="#">Blog List</a></li>
+                            <li><a href="#">Blog Modern</a></li>
+                            <li><a href="#">Blog Standart</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a href="#">PAGE</a>
+                        <ul>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Wiishlist</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Page</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#" class="menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <!--desktop menu end-->
+
+        </header>
+        <!--mobile-menu -->
+        <div class="dark-overlay"></div>
+        <div class="mobile-menu">
+            <a href="#" class="menu-button in-mobile active">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <nav class="mobile-navigation">
+                <ul>
+                    <li class="has-submenu">
+                        <a class="is-submenu" href="#">HOME</a>
+                        <ul>
+                            <li><a href="#">Home Clean</a></li>
+                            <li><a href="#">Home Collection</a></li>
+                            <li><a href="#">Home Minimal</a></li>
+                            <li><a href="#">Home Modern</a></li>
+                            <li><a href="#">Home Style</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has-submenu">
+                        <a class="is-submenu" href="#">SHOP</a>
+                        <ul>
+                            <li><a href="#">Shop Standart</a></li>
+                            <li><a href="#">Shop Full</a></li>
+                            <li><a href="#">Shop List</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has-submenu">
+                        <a class="is-submenu" href="#">PRODUCT</a>
+                        <ul>
+                            <li><a href="#">Sticky ATC</a></li>
+                            <li><a href="#">Video Inner</a></li>
+                            <li><a href="#">Countdown </a></li>
+                            <li><a href="#">Description Accordion</a></li>
+                            <li><a href="#">Description Tab</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a class="is-submenu" href="#">BLOG</a>
+                        <ul>
+                            <li><a href="#">Blog List</a></li>
+                            <li><a href="#">Blog Modern</a></li>
+                            <li><a href="#">Blog Standart</a></li>
+                        </ul>
+                    </li>
+                    <li class="has-submenu">
+                        <a class="is-submenu" href="#">PAGE</a>
+                        <ul>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Wiishlist</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Page</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="mybuttons"></div>
+            <div id="slider" class="slider">
+                <div class="slider_item">
+                    <img
+                        class="slider_img"
+                        src="i/slider-1_ec47c9ab-a301-48cf-8aef-9c9b4fef2946.jpeg"
+                    />
+                    <div class="slider_caption">
+                        <div class="title">
+                            Discover a <br />
+                            world of jewelry
+                        </div>
+                        <button class="slider_caption_btn">
+                            EXPLORE BESTSLLER
+                        </button>
+                    </div>
+                </div>
+                <div class="slider_item">
+                    <img
+                        class="slider_img"
+                        src="i/slider-2_8348b07c-32d6-4133-82b3-b7db991e7949.jpeg"
+                    />
+                    <div class="slider_caption">
+                        <div class="title">
+                            Discover the <br />
+                            Best of the Best
+                        </div>
+                        <button class="slider_caption_btn">
+                            EXPLORE BESTSLLER
+                        </button>
+                    </div>
+                </div>
+                <div class="slider_item">
+                    <img
+                        class="slider_img"
+                        src="i/slider-3_a9a5b086-24a1-45a6-96a9-da21ef0c9287.jpeg"
+                    />
+                    <div class="slider_caption">
+                        <div class="title">
+                            Oh <br />
+                            Hello Newness!
+                        </div>
+                        <button class="slider_caption_btn">
+                            EXPLORE BESTSLLER
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="mydotts"></div>
+        </div>
+
+        <div class="topics_wrap">
+            <div class="topics">
+                <div class="topic">
+                    <div class="photo">
+                        <img class="topic_img" src="i/topic_1.webp" />
+                        <div class="glow-wrap">
+                            <div class="glow"></div>
+                        </div>
+                        <div class="topic_title">
+                            <div class="title">NEW ARRIVALS</div>
+                            <span class="subtitle">SHOP NOW</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="topic">
+                    <div class="photo">
+                        <img class="topic_img" src="i/topic_2.webp" />
+                        <div class="glow-wrap">
+                            <div class="glow"></div>
+                        </div>
+                        <div class="topic_title">
+                            <div class="title">BEST SELLER</div>
+                            <span class="subtitle">SHOP NOW</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="topic">
+                    <div class="photo">
+                        <img class="topic_img" src="i/topic_3.webp" />
+                        <div class="glow-wrap">
+                            <div class="glow"></div>
+                        </div>
+                        <div class="topic_title">
+                            <div class="title">CLEARANCE SALE</div>
+                            <span class="subtitle">SHOP NOW</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="categories">
+            <h3 class="categories_title">TOP CATEGORIES</h3>
+            <div class="category_wrap">
+                <div class="mybuttons_2"></div>
+                <div id="slider_2">
+                    <div class="category">
+                        <img class="category_img" src="i/categories_1.jpeg" />
+                        <h4 class="category_title">SHOP EARRINGS</h4>
+                    </div>
+                    <div class="category">
+                        <img class="category_img" src="i/categories_2.avif" />
+                        <h4 class="category_title">BRACELLETS</h4>
+                    </div>
+                    <div class="category">
+                        <img class="category_img" src="i/categories_3.webp" />
+                        <h4 class="category_title">EARRINGS</h4>
+                    </div>
+                    <div class="category">
+                        <img class="category_img" src="i/categories_4.avif" />
+                        <h4 class="category_title">WEDDING & BRIDAL</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="categories_desktop">
+            <h3 class="categories_desktop_title">TOP CATEGORIES</h3>
+            <div class="category_desktop_wrap">
+                <div class="category_desktop">
+                    <img
+                        class="category_desktop_img"
+                        src="i/categories_1.jpeg"
+                    />
+                    <h4 class="category_desktop_title">SHOP EARRINGS</h4>
+                </div>
+                <div class="category_desktop">
+                    <img
+                        class="category_desktop_img"
+                        src="i/categories_2.avif"
+                    />
+                    <h4 class="category_desktop_title">BRACELLETS</h4>
+                </div>
+                <div class="category_desktop">
+                    <img
+                        class="category_desktop_img"
+                        src="i/categories_3.webp"
+                    />
+                    <h4 class="category_desktop_title">EARRINGS</h4>
+                </div>
+                <div class="category_desktop">
+                    <img
+                        class="category_desktop_img"
+                        src="i/categories_4.avif"
+                    />
+                    <h4 class="category_desktop_title">WEDDING & BRIDAL</h4>
+                </div>
+            </div>
+        </div>
+        <div class="shopping">
+            <img class="bg-color" src="i/bg-color.webp" />
+            <div class="first-part">
+                <h3 class="shopping_title">
+                    HANDCRAFTED & <br />ETHICALLY SOURCED
+                </h3>
+                <div class="shopping_first">
+                    <h4 class="shopping_subtitle">FAIR PRICING</h4>
+                    <p class="shopping_paragraph">
+                        Nullam quis ante. Pellentesque libero tortor, tincidunt
+                        et, tinciduntamet est.In hac habitasse platea dictumst.
+                        Praesent nec nisl a purus blandit viverra
+                    </p>
+                </div>
+                <div class="shopping_first">
+                    <h4 class="shopping_subtitle shopping_subtitle_second">
+                        HIGH QUALITY
+                    </h4>
+                    <p class="shopping_paragraph">
+                        Nullam quis ante. Pellentesque libero tortor, tincidunt
+                        et, tinciduntamet est.In hac habitasse platea dictumst.
+                        Praesent nec nisl a purus blandit viverra
+                    </p>
+                </div>
+                <button class="shopping_btn">LEARN MORE</button>
+            </div>
+            <div class="second-part">
+                <span><img class="shopping_img" src="i/woman.jpeg" /></span>
+            </div>
+        </div>
+
+        <div class="trends">
+            <h2>TRENDING PRODUCTS</h2>
+            <div class="trends_wrap">
+                <!--<div class="countdown-product" id="demo"></div>-->
+                <div class="trends_wrap_1">
+                    <img
+                        class="trends_img trends_img_1"
+                        src="i/TRENDING PRODUCTS_1.webp"
+                    />
+                    <div class="overlay">
+                        <img
+                            class="trends_img_hidden trends_img_1_hidden"
+                            src="i/3_600x.jpeg"
+                        />
+                        <div class="icons">
+                            <button class="icon-search"></button>
+                            <button class="icon-heart"></button>
+                            <button class="icon-cart"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>BOLD HOOPS</h3>
+                        <p>$120</p>
+                    </div>
+                </div>
+                <div class="trends_wrap_2">
+                    <img
+                        class="trends_img trends_img_2 trends_img_two"
+                        src="i/TRENDING PRODUCTS-2.webp"
+                    />
+                    <div class="overlay">
+                        <img
+                            class="trends_img_hidden trends_img_2_hidden"
+                            src="i/2_b3590f88-23ef-4bec-a3a2-98ddd5ecbaee_600x.jpeg"
+                        />
+                        <div class="icons">
+                            <button class="icon-search"></button>
+                            <button class="icon-heart"></button>
+                            <button class="icon-cart"></button>
+                        </div>
+                    </div>
+
+                    <button class="trends_btn">-50 %</button>
+                    <div>
+                        <h3>TWIN HOOPS</h3>
+                        <p><span class="sale">$120</span> $60</p>
+                        <div>
+                            <button class="size">S</button>
+                            <button class="size">M</button>
+                            <button class="size">L</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="trends_wrap_3">
+                    <img
+                        class="trends_img trends_img_3"
+                        src="I/TRENDING PRODUCTS_3.webp"
+                    />
+                    <div class="overlay">
+                        <img
+                            class="trends_img_hidden trends_img_3_hidden"
+                            src="i/11_600x.webp"
+                        />
+                        <div class="icons">
+                            <button class="icon-search"></button>
+                            <button class="icon-heart"></button>
+                            <button class="icon-cart"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>MEDIUM FLAT HOOPS</h3>
+                        <p>$80</p>
+                    </div>
+                </div>
+                <div class="trends_wrap_4">
+                    <img
+                        class="trends_img trends_img_4"
+                        src="i/trending_4.webp"
+                    />
+                    <div class="overlay">
+                        <img
+                            class="trends_img_hidden trends_img_4_hidden"
+                            src="i/12_600x.webp"
+                        />
+                        <div class="icons">
+                            <button class="icon-search"></button>
+                            <button class="icon-heart"></button>
+                            <button class="icon-cart"></button>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>MEDIUM TUBE HOOPS</h3>
+                        <p>$135</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="collections">
+            <div class="collection">
+                <img class="collection_img_1" src="i/collections_1.jpeg" />
+                <div class="overlay">
+                    <div class="collection_text collection_text_1">
+                        <h2 class="collection_title">SUMMER COLLECTIONS</h2>
+                        <p class="collection_paragraph">
+                            Freshwater pearl necklace and earrings
+                        </p>
+                        <button class="collection_btn">EXPLORE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="collection">
+                <img class="collection_img_2" src="i/collections_2.jpeg" />
+                <div class="overlay">
+                    <div class="collection_text collection_text_2">
+                        <h2 class="collection_title">MAKE IT MEMORABLE</h2>
+                        <p class="collection_paragraph">
+                            Freshwater pearl necklace and earrings
+                        </p>
+                        <button class="collection_btn">EXPLORE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="subscribe">
+            <h2 class="subscribe_title">LATEST FROM MOJURI!</h2>
+            <p class="subscribe_paragraph">
+                Sign-up to receive 10% off your next purchase. Plus hear about
+                new arrivals and offers.
+            </p>
+            <div class="subscription">
+                <form>
+                    <div class="form">
+                        <label>
+                            <input
+                                type="text"
+                                placeholder="Your email"
+                                name="email"
+                                required
+                                class="email"
+                            />
+                        </label>
+                        <button
+                            type="submit"
+                            class="btn subscribe"
+                            value="button"
+                        >
+                            SUBSCRIBE
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="logos">
+            <img class="logo" src="i/footer_1.webp" />
+            <img class="logo" src="i/footer_2.webp" />
+            <img class="logo" src="i/footer_3.webp" />
+            <img class="logo" src="i/footer_4.jpeg" />
+            <img class="logo" src="i/footer_5.jpeg" />
+        </div>
+        <footer>
+            <div>
+                <h3 class="footer_title">CONTACT US</h3>
+                <p>
+                    <span class="footer_bold">Head Office:</span> 26 Wyle Cop,
+                    Shrewsbury, Shropshire, SY1 1XD
+                </p>
+                <p><span class="footer_bold">Tel:</span> 01743 234500</p>
+                <p>
+                    <span class="footer_bold">Email:</span> support@mojuri.com
+                </p>
+                <div class="btn">
+                    <button class="footer_btn">
+                        <i class="icon-facebook"></i>
+                    </button>
+
+                    <button class="footer_btn">
+                        <i class="icon-twitter"></i>
+                    </button>
+
+                    <button class="footer_btn">
+                        <i class="icon-instagram"></i>
+                    </button>
+
+                    <button class="footer_btn">
+                        <i class="icon-youtube2"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="footer_column footer_column_second">
+                <h3 class="footer_title">CUSTOMER SERVICES</h3>
+                <p class="footer_paragraph">Contact us</p>
+                <p class="footer_paragraph">Track Your Order</p>
+                <p class="footer_paragraph">Product Care & Repair</p>
+                <p class="footer_paragraph">Book an Appointment</p>
+                <p class="footer_paragraph">Frequently Asked Questions</p>
+                <p class="footer_paragraph">Shipping & Returns</p>
+            </div>
+            <div class="footer_column footer_column_third">
+                <h3 class="footer_title">ABOUT US</h3>
+                <p class="footer_paragraph">About us</p>
+                <p class="footer_paragraph">FAQ</p>
+                <p class="footer_paragraph">Our Producers</p>
+                <p class="footer_paragraph">Sitemap</p>
+                <p class="footer_paragraph">Terms & Condittions</p>
+                <p class="footer_paragraph">Privacy Policy</p>
+            </div>
+            <div class="footer_column">
+                <h3 class="footer_title">CATALOG</h3>
+                <p class="footer_paragraph">Earrings</p>
+                <p class="footer_paragraph">Necklaces</p>
+                <p class="footer_paragraph">Bracelets</p>
+                <p class="footer_paragraph">Rings</p>
+                <p class="footer_paragraph">Jewelry Box</p>
+                <p class="footer_paragraph">Studs</p>
+            </div>
+        </footer>
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/script.js"></script>
+        <script></script>
+    </body>
+</html>
