@@ -7,7 +7,7 @@
     "webpack": "webpack",
     "start": "webpack serve --mode=development",
     "production": "npm run webpack -- --mode=production",
-    "browser": "browser-sync start  -s \"public\"  -w    -f=\"./index.html\" --no-notify",
+    "browser": "browser-sync start  -s \"docs\"  -w    -f=\"./index.html\" --no-notify",
     "build": "npm run production && npm run browser"
   },
   "keywords": [

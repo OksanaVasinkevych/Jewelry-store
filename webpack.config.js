@@ -60,7 +60,7 @@ module.exports = (env, argv) => {
             from: "**/*",
             context: path.resolve(__dirname, "src"),
             globOptions: {
-              ignore: ["**/*.{js,scss}"],
+              ignore: ["**/*.{scss}"],
             },
           },
         ],
